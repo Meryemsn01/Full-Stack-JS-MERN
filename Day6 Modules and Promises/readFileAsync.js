@@ -31,6 +31,11 @@ function writeFileAsync(path , content){
 
 writeFileAsync('text.txt', '  new content')
 
-function processFiles(){
-    
-}
+// function processFiles(path){
+//     let value = readFileAsync(path)
+//     console.log(value)
+//     let result = value
+//     writeFileAsync(result, "meryem")
+//     console.log(result)
+// }
+// processFiles('text.txt')
