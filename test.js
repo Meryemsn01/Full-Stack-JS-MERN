@@ -154,17 +154,60 @@ const { log } = require("console")
 
 // console.log(digitalRoot(555))
 
-function myfunction(s) {
-    let res= s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase().split("")
-    let dis = res.length-1
-    for (let i = 0; i < res.length; i++) {
-        if(res[i] != res[dis]){
-            return false
-        }
-        --dis
-    }
-    return true
-};
+// function myfunction(s) {
+//     let res= s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase().split("")
+//     let dis = res.length-1
+//     for (let i = 0; i < res.length; i++) {
+//         if(res[i] != res[dis]){
+//             return false
+//         }
+//         --dis
+//     }
+//     return true
+// };
 
-console.log(myfunction("A man, a plan, a canal: Panama"))
+// console.log(myfunction("A man, a plan, a canal: Panama"))
 
+// function parentheses(s) {
+//     array = s.split('')
+//     // console.log(array)
+//     let a = '{[('
+//     let b = '}])'
+//     let res = true
+    
+//     for(let i = 0; i < array.length; i++) {
+//         if((!a.includes(array[i]) && !a.includes(array[i+1]) || !b.includes(array[i]) && !b.includes(array[i+1]))){
+//             if(a.includes(array[i])){
+//                 if(b.includes(array[i+1])){
+//                     if(a.indexOf(array[i]) == b.indexOf(array[i+1])){
+//                         // console.log(array[i], array[i+1])
+//                         res = true
+//                     }
+//                 }
+//             }
+//         }  
+//     }
+//     return res
+// };
+
+
+
+
+
+// array = ['m','e','e']
+// console.log(array.indexOf('m'))
+
+// function parentheses(s) {
+//     array = s.split('')
+//     // console.log(array)
+//     let a = ['(' , ')']
+//     let b = ['[' , ']']
+//     let c = ['{' , '}']
+//     for (let i = 0; i < array.length; i++) {
+//         // if((array[i] == b[0] && array[i+1]==b[1]) || (array[i+1] == b[0] && array[i]==b[1]) ){
+//         //     console.log(array[i] , array[i+1])
+//         // }
+        
+//     }
+// };
+// parentheses('{[]}')
