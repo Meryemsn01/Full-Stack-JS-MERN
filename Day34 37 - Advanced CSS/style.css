@@ -1,0 +1,110 @@
+/* Style de base et variables de couleur */
+:root {
+    --primary-color: #3498db; /* Un bleu sympa */
+    --dark-color: #2c3e50;    /* Un gris foncé */
+    --light-color: #ecf0f1;   /* Un gris clair */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+/* Style de la barre de navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.nav-logo {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    list-style: none; /* Enlève les puces */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/* Style de la galerie de projets */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Espace entre les projets */
+}
+
+.project-item {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Style du formulaire de contact */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+#contact-form input, #contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 12px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Media Queries pour le Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Cache les liens sur mobile par défaut */
+    }
+    .burger {
+        display: block; /* Affiche l'icône hamburger */
+        cursor: pointer;
+    }
+}
